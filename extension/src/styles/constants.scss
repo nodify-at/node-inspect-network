@@ -1,0 +1,11 @@
+
+@mixin font-family() {
+  font-family: 'Quicksand', sans-serif
+}
+
+@mixin smooth() {
+    transition:.5s;
+}
+
+$lightBlue: #0277bd;
+$blueGrey: #eceff1;

@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const index_1 = require("./index");
+const socket_1 = require("./socket");
+socket_1.socket.start();
+const request = require('request');
+index_1.inspectNetworkRequest(request);
+setInterval(() => {
+    request('http://www.google.com', () => { });
+}, 5000);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxtQ0FBZ0Q7QUFDaEQscUNBQWdDO0FBRWhDLGVBQU0sQ0FBQyxLQUFLLEVBQUUsQ0FBQztBQUVmLE1BQU0sT0FBTyxHQUFRLE9BQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQztBQUN4Qyw2QkFBcUIsQ0FBQyxPQUFPLENBQUMsQ0FBQztBQUUvQixXQUFXLENBQUMsR0FBRyxFQUFFO0lBQ2IsT0FBTyxDQUFDLHVCQUF1QixFQUFFLEdBQUcsRUFBRSxHQUFFLENBQUMsQ0FBQyxDQUFDO0FBQy9DLENBQUMsRUFBRSxJQUFJLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGluc3BlY3ROZXR3b3JrUmVxdWVzdCB9IGZyb20gJy4vaW5kZXgnO1xuaW1wb3J0IHtzb2NrZXR9IGZyb20gXCIuL3NvY2tldFwiO1xuXG5zb2NrZXQuc3RhcnQoKTtcblxuY29uc3QgcmVxdWVzdDogYW55ID0gcmVxdWlyZSgncmVxdWVzdCcpO1xuaW5zcGVjdE5ldHdvcmtSZXF1ZXN0KHJlcXVlc3QpO1xuXG5zZXRJbnRlcnZhbCgoKSA9PiB7XG4gICAgcmVxdWVzdCgnaHR0cDovL3d3dy5nb29nbGUuY29tJywgKCkgPT4ge30pO1xufSwgNTAwMCk7XG4iXX0=

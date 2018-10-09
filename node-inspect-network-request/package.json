@@ -1,0 +1,33 @@
+{
+    "name": "node-inspect-network",
+    "version": "1.0.7",
+    "description": "",
+    "main": "index.js",
+    "repository": "https://github.com/nodify-at/node-inspect-network.git",
+    "scripts": {
+        "develop": "tsc --pretty -w",
+        "build": "tsc --pretty",
+        "test": "mocha --quiet=false --require ts-node/register \"./{,!(node_modules)/**/}*.spec.ts\"",
+        "coverage": "nyc  --reporter=html --reporter=text npm test"
+    },
+    "author": "Hasan Oezdemir <hasan.ozdemir@nodify.at>",
+    "license": "MIT",
+    "devDependencies": {
+        "nyc": "^13.0.1",
+        "request": "^2.88.0",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.1.1"
+    },
+    "peerDependencies": {
+        "request": "^2.88.0",
+        "typescript": "^3.1.1"
+    },
+    "dependencies": {
+        "@types/node": "^10.11.4",
+        "@types/request": "^2.47.1",
+        "@types/socket.io": "^1.4.38",
+        "@types/ws": "^6.0.1",
+        "socket.io": "^2.1.1",
+        "ws": "^6.1.0"
+    }
+}

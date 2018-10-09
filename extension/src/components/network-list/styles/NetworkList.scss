@@ -1,0 +1,34 @@
+@import "../../../styles/constants";
+
+#network {
+    td {
+        padding: 0.2rem;
+        text-align: center;
+        font-weight: normal;
+        cursor: pointer;
+        @include smooth();
+
+    }
+
+    thead {
+        td {
+            color: $lightBlue;
+            &:hover {
+                background-color: $blueGrey;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            &.error {
+                color: red
+            }
+
+            &:hover {
+                background-color: $blueGrey;
+            }
+        }
+    }
+
+}
